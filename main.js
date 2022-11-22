@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
         padding: 1rem;
       }
 
-      :where(div, p, h1,h2,h3,h4,h5,h6, span, a, ul, ol, li, header, footer, article, section, img, input, textarea, label, nav, main) {
+      :where(div, p, h1,h2,h3,h4,h5,h6, span, a, ul, ol, li, header, footer, article, section, img, input, textarea, label, nav, main, aside) {
         margin-bottom: 10px;
       }
-      :where(div, p, h1,h2,h3,h4,h5,h6, span, a, ul, ol, li, header, footer, article, section, img, input, textarea, label, nav, main)::before {
+      :where(div, p, h1,h2,h3,h4,h5,h6, span, a, ul, ol, li, header, footer, article, section, img, input, textarea, label, nav, main, aside)::before {
         content: "";
         position: absolute;
         font-weight: 900;
@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ol {border: 1px solid purple;}
       li {border: 1px solid yellow;}
       header {border: 1px solid olivedrab;}
+      aside {border: 1px solid blue;}
       footer {border: 1px solid mediumseagreen;}
       article {border: 1px solid salmon;}
       section {border: 1px solid cyan;}
@@ -67,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ol::before{content: "OL";}
       li::before{content: "LI";}
       header::before{content: "HEADER";}
+      aside::before{content: "ASIDE";}
       footer::before{content: "FOOTER";}
       article::before{content: "ARTICLE";}
       section::before{content: SECTION";}
